@@ -29,7 +29,7 @@ Mencari rata-rata `delta1` dan `delta3` dari selisih nilai yang berada di atas d
 
 >`fx = (f0 + s * delta1 + (s * (s - 1) / factorial(2)) * delta2_f0 + (s * (s - 1) * (s - 2) / factorial(3)) * delta3 + ((x / 4) * s * (s - 1) * (s - 2) / factorial(3)) * delta4_f_1)`  
 
-Menghitung nilai interpolasi stirling, dimana `f0` merupakan nilai fungsi dari `x0`, berikutnya kalikan `s`, `faktorial`, dan nilai `delta`. 
+Menghitung nilai interpolasi stirling, di mana `f0` merupakan nilai fungsi dari `x0`, berikutnya kalikan `s`, `faktorial`, dan nilai `delta`. 
 
 >`fx = round(fx, 2)`  
 
@@ -41,7 +41,7 @@ Hasil dari perhitungan nilai `fx` dilakukan pembulatan 2 angka dibelakang koma.
 >    else:  
 >        return fx`  
 
-Menghitung nilai Error True, jika diketahui nilai sebenarnya `yt`. Maka Error True diperoleh dari mutlak selisih nilai sebenarnya `yt` dan nilai `fx` dibagi dengan `yt` lalu dikalikan dengan 100%. Langkah terakhir yakni dengan membulatkan hasilnya dengan 2 angka dibelakang koma.
+Menghitung nilai Error True, jika diketahui nilai sebenarnya `yt`. Maka Error True diperoleh dari mutlak selisih nilai sebenarnya `yt` dan nilai `fx` dibagi dengan `yt` lalu dikalikan dengan 100%. Langkah terakhir yakni dengan membulatkan hasilnya dengan 2 angka di belakang koma.
 
   
 ### DATA DARI TABEL
@@ -62,7 +62,7 @@ xt = 436366
 
 >`f14, Et = stirling_interpolasi(f0, delta_f0, delta_f_1, delta2_f0, delta3_f0, delta3_f_1, delta4_f_1, x0, h, xs, xt)`  
 
-Melakuka pemanggilan fungsi untuk menghitung niali dari interplasi stirling dan nilai Error True `x = 14`.  
+Melakukan pemanggilan fungsi untuk menghitung nilai dari interpolasi stirling dan nilai Error True `x = 14`.  
 
 >`print(f"Nilai f({xs}) dengan interpolasi Stirling: {f14}")  
 >print(f"Nilai Et: {Et}%")`  
